@@ -1,4 +1,4 @@
-baseurl = "http://unigornel.github.io/unigornel.org"
+baseurl = "http://unigornel.github.io/unigornel.org/"
 languageCode = "en-us"
 title = "Unigornel"
 theme = "hugo-material-docs"
