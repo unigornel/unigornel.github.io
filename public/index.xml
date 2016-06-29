@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unigornel</title>
+    <link>/</link>
+    <description>Recent content on Unigornel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jun 2016 20:12:07 +0200</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unigornel - A library operating system written in Go</title>
+      <link>/</link>
+      <pubDate>Tue, 28 Jun 2016 20:12:07 +0200</pubDate>
+      
+      <guid>/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://jenkins.unigornel.org/job/unigornel-master/&#34;&gt;&lt;img src=&#34;https://jenkins.unigornel.org/buildStatus/icon?job=unigornel-master&#34; alt=&#34;Build Status&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This software is in the development phase, see the &lt;a href=&#34;https://unigornel.org/doku.php?id=development:roadmap&#34;&gt;roadmap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
+
+&lt;p&gt;Unigornel is a library operating system written in Go. It compiles Go code to
+unikernels that run under the Xen hypervisor.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.unigornel.org/doku.php?id=getting_started&#34;&gt;Creating a Hello World! unikernel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.unigornel.org/doku.php?id=development&#34;&gt;Getting Started for Developers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;We assume
+  - &lt;code&gt;/usr/local/go&lt;/code&gt; holds a recent version of Go.
+  - &lt;code&gt;$GOPATH/bin&lt;/code&gt; is present in your &lt;code&gt;$PATH&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;go get -v github.com/unigornel/unigornel/unigornel
+cd $GOPATH/src/github.com/unigornel/unigornel
+git submodule update --init --recursive
+GOROOT_BOOTSTRAP=/usr/local/go make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;setup-the-unigornel-environment&#34;&gt;Setup the unigornel environment&lt;/h2&gt;
+
+&lt;p&gt;The installation procedure installs the &lt;code&gt;unigornel&lt;/code&gt; binary in &lt;code&gt;$GOPATH/bin&lt;/code&gt;.
+This binary is used to setup the environment and compile unikernels.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eval $(unigornel env)
+cd $GOPATH/src/your-unikernel
+unikernel build -o your-unikernel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;testing&#34;&gt;Testing&lt;/h2&gt;
+
+&lt;p&gt;To run the tests, you need a working Xen installation. You should run the
+&lt;code&gt;integration_tests&lt;/code&gt; binary as root, as it needs to launch Xen domains.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;go get -v github.com/unigornel/unigornel/integration_tests
+cd $GOPATH/src/github.com/unigornel/integration_tests
+go build
+./integration_tests -h
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
