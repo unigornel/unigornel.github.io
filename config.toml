@@ -45,7 +45,7 @@ googleAnalytics = ""
 
 [[menu.main]]
 	name   = "Home"
-	url    = "/"
+	url    = "/unigornel.org/"
 	weight = 0
 
 [blackfriday]
