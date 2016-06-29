@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unigornel</title>
-    <link>/</link>
+    <link>http://unigornel.github.io/unigornel.org/</link>
     <description>Recent content on Unigornel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Jun 2016 20:12:07 +0200</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://unigornel.github.io/unigornel.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Unigornel - A library operating system written in Go</title>
-      <link>/</link>
+      <link>http://unigornel.github.io/unigornel.org/</link>
       <pubDate>Tue, 28 Jun 2016 20:12:07 +0200</pubDate>
       
-      <guid>/</guid>
+      <guid>http://unigornel.github.io/unigornel.org/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://jenkins.unigornel.org/job/unigornel-master/&#34;&gt;&lt;img src=&#34;https://jenkins.unigornel.org/buildStatus/icon?job=unigornel-master&#34; alt=&#34;Build Status&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
