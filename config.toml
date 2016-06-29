@@ -1,9 +1,10 @@
-baseurl = "http://unigornel.github.io/unigornel.org/"
+baseurl = "/"
 languageCode = "en-us"
 title = "Unigornel"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
+RelativeURLs = true
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
 
