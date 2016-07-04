@@ -5,3 +5,4 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:unigornel/unigornel.github.io
+        branch = master
