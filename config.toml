@@ -48,6 +48,11 @@ googleAnalytics = ""
 	url    = "/"
 	weight = 0
 
+[[menu.main]]
+	name   = "Getting started"
+	url    = "getting-started/"
+	weight = 10
+
 [blackfriday]
 	smartypants = true
 	fractions = true
