@@ -53,6 +53,10 @@ googleAnalytics = ""
 	url    = "getting-started/"
 	weight = 10
 
+[[menu.main]]
+        name    = "Development"
+        url     = "development/"
+        weight  = 20
 [blackfriday]
 	smartypants = true
 	fractions = true
