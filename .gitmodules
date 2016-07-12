@@ -1,4 +1,0 @@
-[submodule "themes/hugo-material-docs"]
-	path = themes/hugo-material-docs
-	url = https://github.com/mxbonn/hugo-material-docs
-	branch = develop
