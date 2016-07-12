@@ -20,7 +20,6 @@ git config user.email "travis@unigornel.org"
 # files present with the commit message "Deploy to GitHub Pages".
 git add .
 git commit -m "Deploy output of ($TRAVIS_COMMIT) to GitHub Pages"
-echo "$TRAVIS_COMMIT"
 
 # Force push from the current repo's master branch to the remote
 # repo's gh-pages branch.
