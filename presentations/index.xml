@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentations on Unigornel</title>
+    <link>/presentations/</link>
+    <description>Recent content in Presentations on Unigornel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Jul 2016 20:01:49 +0200</lastBuildDate>
+    <atom:link href="/presentations/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Presentations</title>
+      <link>/presentations/</link>
+      <pubDate>Mon, 04 Jul 2016 20:01:49 +0200</pubDate>
+      
+      <guid>/presentations/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;projectvoorstel.pdf&#34;&gt;Projectvoorstel - Unikernel voor Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;1_the_go_compiler.pdf&#34;&gt;The Go Compiler - Linking with Mini-OS (16/02/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks:&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t edit linux, edit some other Go target to not interfere with host Go tools.&lt;/li&gt;
+&lt;li&gt;Avoid &lt;code&gt;-r&lt;/code&gt; flag when compiling Go itself&lt;/li&gt;
+&lt;li&gt;Stub pthreads in mini-os&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;2_initializing_go_in_minios.pdf&#34;&gt;Initializing Go in Mini-OS (Part 1) (01/03/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;Disable stack cookies to fix problem on Ubuntu&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;-fno-stack-protector&lt;/code&gt; flag (&lt;a href=&#34;https://github.ugent.be/unigornel/go/commit/34aac4d43a4460b173a0fcf40a4c36db77d2af5c&#34;&gt;34aac4d&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;3_initializing_go_gdt.pdf&#34;&gt;Initializing Go in Mini-OS (Part 2) (07/03/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;Why initialize CS and DS? And if you do so why not for SS? (&lt;a href=&#34;https://github.ugent.be/unigornel/minios/commit/0dfe35620fc431b41e46262917434664a17d1e9b&#34;&gt;0dfe356&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;4_initializing_go_runtime_memory.pdf&#34;&gt;Initializing Go in Mini-OS (Part 3) - Memory (07/03/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;Try short term solution first (&lt;a href=&#34;https://github.ugent.be/unigornel/go/commit/d37f5677be6a604c41e713ed3d186fc110ce1a06&#34;&gt;d37f567&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Give guest more memory&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;5_tussentijdse_presentatie_1.pdf&#34;&gt;Eerste tussentijdse presentatie (10/03/2016)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;6_initializing_go_runtime_hello_world.pdf&#34;&gt;Initializing Go in Mini-OS (Part 4) - Hello World (15/03/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks:&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;thread sleep bug: edit main from print sleep to print sleep print&lt;/li&gt;
+&lt;li&gt;break after first print, use gdb and look where it crashes&lt;/li&gt;
+&lt;li&gt;set watchpoint on address&lt;/li&gt;
+&lt;li&gt;short term goals: tests, read from console input (but first check if the concept is the same as for network)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;unigornel_tweede_tussentijdse_presentatie.pdf&#34;&gt;Tweede tussentijdse presentatie (12/04/2016)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;8_read_from_console.pdf&#34;&gt;Console Input (21/04/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks:&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No terminal emulation, doesn&amp;rsquo;t handle special characters, this is not a priority&lt;/li&gt;
+&lt;li&gt;Not written in Go&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;9_basic_ethernet.pdf&#34;&gt;Basic Ethernet (28/04/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks:&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implement network stack until ping echo-reply&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;10_eindverslag_unigornel.pdf&#34;&gt;Eindverslag (11/05/2016)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;11_eindpresentatie.pdf&#34;&gt;Eindpresentatie (17/05/2016)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

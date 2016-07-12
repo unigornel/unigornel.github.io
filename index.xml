@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unigornel</title>
+    <link>/</link>
+    <description>Recent content on Unigornel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Jul 2016 20:01:49 +0200</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Presentations</title>
+      <link>/presentations/</link>
+      <pubDate>Mon, 04 Jul 2016 20:01:49 +0200</pubDate>
+      
+      <guid>/presentations/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;projectvoorstel.pdf&#34;&gt;Projectvoorstel - Unikernel voor Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;1_the_go_compiler.pdf&#34;&gt;The Go Compiler - Linking with Mini-OS (16/02/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks:&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t edit linux, edit some other Go target to not interfere with host Go tools.&lt;/li&gt;
+&lt;li&gt;Avoid &lt;code&gt;-r&lt;/code&gt; flag when compiling Go itself&lt;/li&gt;
+&lt;li&gt;Stub pthreads in mini-os&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;2_initializing_go_in_minios.pdf&#34;&gt;Initializing Go in Mini-OS (Part 1) (01/03/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;Disable stack cookies to fix problem on Ubuntu&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;-fno-stack-protector&lt;/code&gt; flag (&lt;a href=&#34;https://github.ugent.be/unigornel/go/commit/34aac4d43a4460b173a0fcf40a4c36db77d2af5c&#34;&gt;34aac4d&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;3_initializing_go_gdt.pdf&#34;&gt;Initializing Go in Mini-OS (Part 2) (07/03/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;Why initialize CS and DS? And if you do so why not for SS? (&lt;a href=&#34;https://github.ugent.be/unigornel/minios/commit/0dfe35620fc431b41e46262917434664a17d1e9b&#34;&gt;0dfe356&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;4_initializing_go_runtime_memory.pdf&#34;&gt;Initializing Go in Mini-OS (Part 3) - Memory (07/03/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;Try short term solution first (&lt;a href=&#34;https://github.ugent.be/unigornel/go/commit/d37f5677be6a604c41e713ed3d186fc110ce1a06&#34;&gt;d37f567&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Give guest more memory&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;5_tussentijdse_presentatie_1.pdf&#34;&gt;Eerste tussentijdse presentatie (10/03/2016)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;6_initializing_go_runtime_hello_world.pdf&#34;&gt;Initializing Go in Mini-OS (Part 4) - Hello World (15/03/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks:&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;thread sleep bug: edit main from print sleep to print sleep print&lt;/li&gt;
+&lt;li&gt;break after first print, use gdb and look where it crashes&lt;/li&gt;
+&lt;li&gt;set watchpoint on address&lt;/li&gt;
+&lt;li&gt;short term goals: tests, read from console input (but first check if the concept is the same as for network)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;unigornel_tweede_tussentijdse_presentatie.pdf&#34;&gt;Tweede tussentijdse presentatie (12/04/2016)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;8_read_from_console.pdf&#34;&gt;Console Input (21/04/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks:&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No terminal emulation, doesn&amp;rsquo;t handle special characters, this is not a priority&lt;/li&gt;
+&lt;li&gt;Not written in Go&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;9_basic_ethernet.pdf&#34;&gt;Basic Ethernet (28/04/2016)&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remarks:&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implement network stack until ping echo-reply&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;10_eindverslag_unigornel.pdf&#34;&gt;Eindverslag (11/05/2016)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;11_eindpresentatie.pdf&#34;&gt;Eindpresentatie (17/05/2016)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>System Calls</title>
+      <link>/development/systemcalls/</link>
+      <pubDate>Mon, 04 Jul 2016 17:39:12 +0200</pubDate>
+      
+      <guid>/development/systemcalls/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;System calls are functions implemented by Mini-OS that can be called from the Go runtime. Most system calls are implemented in &lt;code&gt;syscalls.c&lt;/code&gt;, &lt;code&gt;mmap.c&lt;/code&gt; and &lt;code&gt;futex.c&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Calling these functions from Go requires two steps:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a function written in Go assembly that calls these functions&lt;/li&gt;
+&lt;li&gt;Create a Go function that wraps the Go assembly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both the &lt;code&gt;runtime&lt;/code&gt; and the &lt;code&gt;syscall&lt;/code&gt; package need access to lower level system calls.&lt;/p&gt;
+
+&lt;h2 id=&#34;adding-a-system-call&#34;&gt;Adding a system call&lt;/h2&gt;
+
+&lt;p&gt;After adding new system calls to Mini-OS with annotations (see examples in &lt;code&gt;syscalls.c&lt;/code&gt; and &lt;code&gt;include/syscalls.h&lt;/code&gt;), update the Go code base by running the following script from Mini-OS:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd unigornel/minios/tools
+$ ./updatesys.bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ll probably want to use your new system call in places like &lt;code&gt;syscall/zsyscall_unigornel_amd64.go&lt;/code&gt;, which is not (yet) generated. &lt;a href=&#34;https://github.ugent.be/unigornel/go/commit/3951f57f5f2090ef2cc32dfd5f1aa53bcd3ce8f2&#34;&gt;commit 3951f57f&lt;/a&gt; gives a good example on how to add a system call.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Important&lt;/strong&gt;: You must still add your C symbol to &amp;ldquo;runtime/cgo/unigornel.go&amp;rdquo; &lt;a href=&#34;https://github.com/unigornel/go/tree/master/src/runtime/cgo/unigornel.go&#34;&gt;check examples&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>/development/roadmap/</link>
+      <pubDate>Mon, 04 Jul 2016 17:31:54 +0200</pubDate>
+      
+      <guid>/development/roadmap/</guid>
+      <description>
+
+&lt;p&gt;The unigornel project is in the development phase. Some components are working, some components are partially working, some components are under development and some components are missing.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-s-next&#34;&gt;What&amp;rsquo;s Next&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unigornel/unigornel/issues/1&#34;&gt;Fix memory management&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unigornel/unigornel/issues/2&#34;&gt;Implement full network stack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Convert functionality form C to Go&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;working&#34;&gt;Working&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Compiling unikernels&lt;/li&gt;
+&lt;li&gt;Console input/output&lt;/li&gt;
+&lt;li&gt;Basic memory&lt;/li&gt;
+&lt;li&gt;Ping replies&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Debugging a Unikernel</title>
+      <link>/development/debugging/</link>
+      <pubDate>Mon, 04 Jul 2016 16:46:24 +0200</pubDate>
+      
+      <guid>/development/debugging/</guid>
+      <description>
+
+&lt;h2 id=&#34;installing-gdbsx&#34;&gt;Installing gdbsx&lt;/h2&gt;
+
+&lt;p&gt;Xen has a debugging tool for guests: &lt;code&gt;gdbsx&lt;/code&gt;. It is maintained in the &lt;a href=&#34;http://xenbits.xen.org/gitweb/?p=xen.git;a=tree;f=tools/debugger/gdbsx;h=9a0f5937e0a207f1431c0f4ed5e2f9bd0c555074;hb=HEAD&#34;&gt;Xen source tree&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To compile and install &lt;code&gt;gdbsx&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# apt-get install python-dev gettext bin86 bcc iasl uuid-dev libglib2.0-dev libpixman-1-dev libaio-dev libssl-dev libyajl-dev libncurses5-dev
+$ git clone git://xenbits.xen.org/xen.git
+$ xl info | grep version
+xen_version : 4.4.1
+$ cd xen
+$ git checkout RELEASE-4.4.1
+$ cd tools
+$ ./configure
+$ cd debugger/gdbsx
+$ make
+# install -m 0755 gdbsx /usr/local/bin/gdbsx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; It is crucial that you checkout the current release of Xen matched to your system installation.&lt;/p&gt;
+
+&lt;h2 id=&#34;using-gdbsx&#34;&gt;Using gdbsx&lt;/h2&gt;
+
+&lt;p&gt;Debugging a Xen guest takes two steps:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start the Xen guest in paused mode (e.g. &lt;code&gt;xl create -p -c config.xen&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Get the domain ID of the host (e.g. &lt;code&gt;xl domid domain-name-here&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Attach &lt;code&gt;gdbsx&lt;/code&gt; (e.g. &lt;code&gt;gdbsx -a dom-id-here 64 9000 -d&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Attach &lt;code&gt;gdb&lt;/code&gt; to the running &lt;code&gt;gdbsx&lt;/code&gt;-instance (e.g. &lt;code&gt;gdb -ex &#39;target remote:9000&#39; mini-os&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;gdb&lt;/code&gt; to debug: (e.g. in &lt;code&gt;gdb&lt;/code&gt; type &lt;code&gt;ni&lt;/code&gt; for next instruction)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Look at &lt;a href=&#34;https://github.com/unigornel/xl-debug&#34;&gt;xl-debug&lt;/a&gt; for a script that automates some of the above steps.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>/development/</link>
+      <pubDate>Mon, 04 Jul 2016 16:32:28 +0200</pubDate>
+      
+      <guid>/development/</guid>
+      <description>
+
+&lt;p&gt;This project is still in the development phase. Read the &lt;a href=&#34;./development/roadmap/&#34;&gt;Roadmap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-structure&#34;&gt;Project Structure&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Main repository &lt;a href=&#34;https://github.com/unigornel/unigornel&#34;&gt;unigornel&lt;/a&gt;, with submodules
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unigornel/go&#34;&gt;Go fork&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unigornel/minios&#34;&gt;Mini-OS fork&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;TCP/IP stack &lt;a href=&#34;https://github.com/unigornel/go-tcpip&#34;&gt;go-tcpip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;submitting-a-pull-request&#34;&gt;Submitting a Pull Request&lt;/h2&gt;
+
+&lt;p&gt;It is crucial that the submodules in the &lt;a href=&#34;https://github.com/unigornel/unigornel&#34;&gt;unigornel&lt;/a&gt; repository stay matched.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a pull requests for every submodule that you update&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;./update.bash&lt;/code&gt; to update the submodule commits&lt;/li&gt;
+&lt;li&gt;Create a pull request for the unigornel-repository&lt;/li&gt;
+&lt;li&gt;Reference your submodule pull requests in the unigornel pull request (e.g. &lt;em&gt;This PR is related to unigornel/minios#3 and unigornel/go#6&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;design-and-development&#34;&gt;Design and Development&lt;/h2&gt;
+
+&lt;p&gt;If you want to learn how to help develop this project, read&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./development/debugging/&#34;&gt;Debugging a Unikernel&lt;/a&gt;: Learn how to debug a unikernel with Xen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./development/systemcalls/&#34;&gt;System Calls&lt;/a&gt;: Learn about the interface between Mini-OS and Go&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>/getting-started/</link>
+      <pubDate>Mon, 04 Jul 2016 14:40:23 +0200</pubDate>
+      
+      <guid>/getting-started/</guid>
+      <description>
+
+&lt;p&gt;This tutorial will guide you through the basic steps of creating a Go unikernel. We assume you have a working 64-bit Xen installation. At the end of this tutorial, you&amp;rsquo;ll be able to print something to the Xen console.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;The unigornel project can be downloaded using &lt;code&gt;go get&lt;/code&gt;. Use this command to get the source of the &lt;code&gt;unigornel&lt;/code&gt; command and its dependencies.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;go get -v github.com/unigornel/unigornel/unigornel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;github.com/unigornel/unigornel&lt;/code&gt; repository contains two submodules. These submodules reference to matching versions of the &lt;code&gt;go&lt;/code&gt;-fork and the &lt;code&gt;mini-os&lt;/code&gt; fork. Use &lt;code&gt;git&lt;/code&gt; to update these submodules.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd $GOPATH/src/github.com/unigornel/unigornel
+git submodule update --init --recursive
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You are now ready to build the &lt;code&gt;unigornel&lt;/code&gt; command line utility and the fork of the Go programming language. We assume you have a working Go installation in &lt;code&gt;/usr/local/go&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;  cd $GOPATH/src/github.com/unigornel/unigornel
+  GOROOT_BOOTSTRAP=/usr/local/go make
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This command will build an edited version of Go and a command line utility called &lt;code&gt;unigornel&lt;/code&gt; (in &lt;code&gt;$GOPATH/bin/unigornel&#39;&lt;/code&gt;. This command line utility is used to actually build unikernels. It relies on the correct values of the environment variables &lt;code&gt;GOROOT&lt;/code&gt;, &lt;code&gt;UNIGORNEL_MINIOS&lt;/code&gt; and &lt;code&gt;PATH&lt;/code&gt; to build unikernels.&lt;/p&gt;
+
+&lt;p&gt;To automatically configure your environment you can use the &lt;code&gt;unigornel env&lt;/code&gt;. This command reads out a configuration file in &lt;code&gt;$HOME/.unigornel.yaml&lt;/code&gt; and spits out the correct environment variables. To generate &amp;ldquo;.unigornel.yaml&amp;rdquo; for your current environment, run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd $GOPATH/src/github.com/unigornel/unigornel
+make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;setup-your-environment&#34;&gt;Setup your environment&lt;/h2&gt;
+
+&lt;p&gt;Make sure the &lt;code&gt;unigornel&lt;/code&gt; command line utility is in your path.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;export PATH=&amp;quot;$GOPATH/bin:$PATH&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now make sure all environment variables are set correctly.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;eval $(unigornel env)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can now use &lt;code&gt;unigornel build&lt;/code&gt; to build unikernels.&lt;/p&gt;
+
+&lt;h2 id=&#34;building-a-unikernel&#34;&gt;Building a unikernel&lt;/h2&gt;
+
+&lt;p&gt;Source code for unikernels should be placed in your GOPATH. We will be compiling a unikernel that prints out &lt;code&gt;Hello World!&lt;/code&gt; to the console.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mkdir $GOPATH/src/helloworld
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Put the following code in &lt;code&gt;$GOPATH/src/helloworld/main.go&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Go&#34;&gt;package main
+
+import &amp;quot;C&amp;quot;
+import &amp;quot;fmt&amp;quot;
+
+func main() {}
+
+//export Main
+func Main(unused int) {
+	fmt.Printf(&amp;quot;Hello World!\n&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now build your unikernel&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd $GOPATH/src/helloworld
+unigornel build -o helloworld
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;running-a-unikernel&#34;&gt;Running a unikernel&lt;/h2&gt;
+
+&lt;p&gt;The resulting binary can be executed directly under Xen. The following configuration file can be used. Note that currently a lot of memory is needed, as the memory subsystem is not yet finished.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd $GOPATH/src/helloworld
+cat helloworld.xen
+kernel = &amp;quot;helloworld&amp;quot;
+memory = 256
+name = &amp;quot;helloworld&amp;quot;
+on_crash = &amp;quot;preserve&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Run the unikernel using the &lt;code&gt;xl&lt;/code&gt; command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;xl create -c helloworld.xen
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It should generate the following console output&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Xen Minimal OS!
+  start_info: 0000000000221000(VA)
+    nr_pages: 0x10000
+  shared_inf: 0xa8da5000(MA)
+     pt_base: 0000000000224000(VA)
+nr_pt_frames: 0x5
+    mfn_list: 00000000001a1000(VA)
+   mod_start: 0x0(VA)
+     mod_len: 0
+       flags: 0x0
+    cmd_line: 
+       stack: 000000000015b8c0-000000000017b8c0
+MM: Init
+      _text: 0000000000000000(VA)
+     _etext: 000000000008f559(VA)
+   _erodata: 000000000012e000(VA)
+     _edata: 000000000012fee0(VA)
+stack start: 000000000015b8c0(VA)
+       _end: 000000000019bdf8(VA)
+  start_pfn: 22c
+    max_pfn: 10000
+Mapping memory range 0x22c000 - 0x10000000
+setting 0000000000000000-000000000012e000 readonly
+skipped 1000
+MM: Initialise page allocator for 2aa000(2aa000)-10000000(10000000)
+MM: done
+Demand map pfns at 10001000-0000002010001000.
+Initialising timer interface
+Initialising console ... done.
+gnttab_table mapped at 0000000010001000.
+Initialising scheduler
+Thread &amp;quot;Idle&amp;quot;: pointer: 0x000000000032e070, stack: 0x0000000000330000
+Thread &amp;quot;xenstore&amp;quot;: pointer: 0x000000000032e0d8, stack: 0x0000000000340000
+xenbus initialised on irq 1 mfn 0x103e6b
+Thread &amp;quot;shutdown&amp;quot;: pointer: 0x000000000032e140, stack: 0x0000000000350000
+go_main.c: app_main(000000000017b8c0)
+Thread &amp;quot;main&amp;quot;: pointer: 0x000000000032e220, stack: 0x0000000000370000
+Thread &amp;quot;initialize_go&amp;quot;: pointer: 0x000000000032e300, stack: 0x0000000000380000
+mmap(addr=000000c000000000,len=0x4412000,prot=0x0, flags=0x1002)
+mmap(addr=0000000000000000,len=0x40000,prot=0x3, flags=0x1002)
+mmap(addr=0000000004410000,len=0x100000,prot=0x3, flags=0x1002)
+mmap(addr=0000000004408000,len=0x8000,prot=0x3, flags=0x1002)
+mmap(addr=0000000004000000,len=0x1000,prot=0x3, flags=0x1002)
+mmap(addr=0000000000000000,len=0x10000,prot=0x3, flags=0x1002)
+Thread &amp;quot;pthread-0&amp;quot;: pointer: 0x000000000032e488, stack: 0x00000000003a0000
+mmap(addr=0000000000000000,len=0x40000,prot=0x3, flags=0x1002)
+Thread &amp;quot;pthread-1&amp;quot;: pointer: 0x000000000032e5a0, stack: 0x00000000003b0000
+Hello World!
+crash: go_main.c, line 20: main thread must not return
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unigornel - A library operating system written in Go</title>
+      <link>/</link>
+      <pubDate>Tue, 28 Jun 2016 20:12:07 +0200</pubDate>
+      
+      <guid>/</guid>
+      <description>&lt;p&gt;Unigornel is a library operating system written in Go. It compiles Go code to unikernels that run under the Xen hypervisor.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Getting Started
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./development/roadmap/&#34;&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./getting-started/&#34;&gt;For users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./development/&#34;&gt;For developers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Useful links:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/unigornel&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jenkins.unigornel.org/&#34;&gt;Jenkins&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
