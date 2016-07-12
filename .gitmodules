@@ -1,8 +1,4 @@
 [submodule "themes/hugo-material-docs"]
 	path = themes/hugo-material-docs
-	url = git@github.com:mxbonn/hugo-material-docs
+	url = https://github.com/mxbonn/hugo-material-docs
 	branch = develop
-[submodule "public"]
-	path = public
-	url = git@github.com:unigornel/unigornel.github.io
-        branch = master
