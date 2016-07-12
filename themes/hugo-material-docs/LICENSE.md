@@ -1,4 +1,5 @@
-Copyright (c) 2016 Digitalcraftsman <digitalcraftsman@protonmail.com><br>
+Copyright (c) 2016 The Unigornel authors. All rights reserved.
+Copyright (c) 2016 Digitalcraftsman <digitalcraftsman@protonmail.com>
 Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
