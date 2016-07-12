@@ -1,0 +1,14 @@
+language: go
+go: tip
+install: go get -v github.com/spf13/hugo
+script: hugo
+deploy:
+    skip_cleanup: true
+    provider: script
+    script: ./.travis-deploy.sh
+    on:
+        branch: source
+env:
+  global:
+    - secure: RvW05Uxiwy+IiQoJUh3shNe3p2GGlfF3BIhM3Uz/U7gAkrPM9mEgJ74cmxTXC3jQ7b6lQOHgGyFmzCtfFFTwtZQz6exnyxk5LcmRqDqHrD9KYFscyJc/qfI5vfBPu9+lSZpFAUvhA5kaOgxr8ZnuU3YWcAIYKRodzyjG9UohyfvupacF2V9fd6xRPuHInMMXvA1A8q7N1QGUhYx3FUvcmG0PEl4MxkIyuu7DM74UAmh5llW4LtQFAf08mPhtINQNTuDeKIW8PrDI4b4u1c1etkdawPL1GP6n3OW6A+xsPs8ly585w4qEZ7eLC6FmWWv44xWpcLIf5Jp3XxW9GKLXqydSHtRaA8pz6BQ3yIF74XW76I9zy/OnhdINDruvjeDKGIN5ZBWalTnSq6wQhVLIpA5VjR0ITnQwKc4CT/kAHXIP16IjlmumjoXIncPWObGuzSCTWEjwQorRZEyoreFyMVX6uBpgW0Z0e4ECmBuBuL7PZTaAhzUzkBW5EVH5rh26e6NwIhKBeBlQNzJnr/VDrF/mDGzrSFxblpu+cvPgi6oJP696Yys8n2dt67pnyjB5oKrDvLgJgMAl/+jFWqSJA0d2EQdTryM3UDbQ2BoZSkn72PCuJLP0PZZrUh760N4ynr1dkOgymFNyDxDudb4/lEpEqQ9PYxz7kwz829WWh70=
+    - CNAME=unigornel.org
