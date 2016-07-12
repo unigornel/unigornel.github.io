@@ -10,7 +10,7 @@ googleAnalytics = ""
 
 [params]
 	# General information
-	#author = "Unigornel"
+    copyright = "Unigornel"
 	description = "A material design theme for documentations."
 
 	# Repository
